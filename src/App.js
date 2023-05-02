@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './randomJoke.css';
 
 function RandomJoke() {
   const [joke, setJoke] = useState('');
@@ -10,9 +11,9 @@ function RandomJoke() {
   }, []);
 
   return (
-    <div>
+    <div className='joke-wrapper'>
       <h1>Random Joke Generator</h1>
-      <p>{joke}</p>
+      <p className='joke'>{joke}</p>
     </div>
   );
 }
